@@ -19,13 +19,9 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "baseUrl": "src",
-    "paths": {
-      "@comps/*":["components/*"],
-    }
+    "baseUrl": "src"
   },
   "include": [
     "src"
-  ],
- 
+  ]
 }

@@ -1,0 +1,26 @@
+.game-layout__gameScene{
+    grid-area: GS;
+    min-width: 100%;
+    min-height: 100%;
+}
+.game-area{
+    display: grid ;
+    place-items: center;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr ;
+    grid-template-areas: "main";
+    min-height: 100%;
+}
+.game-layout__title{
+    color: white;
+    grid-area: main;
+    z-index: 100;
+    font-size: 10rem;
+    letter-spacing: 30px;
+}
+
+#game-canvas {
+    grid-area: main;
+    max-width: 100%;
+    max-height: 100%;
+}
