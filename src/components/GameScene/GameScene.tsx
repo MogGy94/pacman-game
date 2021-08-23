@@ -55,6 +55,8 @@ const GameScene = (props:any) => {
             const H = gameArea_ref.current.parentElement.clientHeight
             setCanvasW(W);
             setCanvasH(H);
+            scene.init();
+            scene.buildSceneRules({width:W, height: H})
         }
        //se nita para inicializar el context 
     }, [])
@@ -68,7 +70,8 @@ const GameScene = (props:any) => {
             setCanvasH(H);
             //setCanvasW(window.innerWidth);
             //setCanvasH(window.innerHeight);
-            scene.init();
+            //scene.init();
+            
             //cleanCanvas();
             //console.log({ innerWidth, innerHeight });
         }
@@ -83,7 +86,7 @@ const GameScene = (props:any) => {
 
     const animate = (time:any) => {
         const paramas = {
-            pointRange: 300,
+            pointRange: 200,
             point: {
                 x: mousePosition.clientX,
                 y: mousePosition.clientY

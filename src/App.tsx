@@ -1,5 +1,5 @@
 import React from 'react';
-import Scene from 'classes/Scene'
+import Scene,{SceneParams} from 'classes/Scene'
 
 import GameScene ,{
   Score,
@@ -11,7 +11,11 @@ import GameScene ,{
 
 import './App.css';
 
-const scene = new Scene(500);
+const params: SceneParams ={
+  tileSize: 30,
+  totCircles: 500
+}
+const scene = new Scene(params);
 
 function App() {
   return (

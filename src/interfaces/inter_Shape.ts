@@ -13,6 +13,10 @@ export interface Shape {
     color?: string;
 }
 
+export interface BoardPosition {
+    colum?: number;
+    row?: number;
+}
 export const colorArray = [
     "#B3372E",
     "#D6D9BA",
